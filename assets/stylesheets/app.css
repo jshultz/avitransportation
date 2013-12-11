@@ -1,0 +1,354 @@
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+html { font-size: 62.5%; }
+body { font-size: 14px; font-size: 1.4rem; } /* =14px */
+
+body {
+    background: url('/assets/images/site-images/background.jpg') repeat-x center top;
+    background-color: #16171a;
+}
+
+h1, h2, h3, h4, p {
+    color: white;
+}
+
+#header {
+
+}
+
+#sliderContainer {
+	margin-left: 3.4%;
+}
+
+#sliderContainer .pics {
+	height:  340px;
+	width:   910px;
+	padding: 0;
+	margin:  0;
+}
+
+#sliderContainer .pics img {
+	border:  1px solid #ccc;
+	background-color: #eee;
+	width:  980px;
+	height: 300px;
+	top:  0;
+	left: 0
+}
+
+.headline, .quote {
+    background: url('/assets/images/site-images/headline-bg.jpg') 0 0 repeat-x;
+    -khtml-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+.pdf a {
+
+    background: transparent url(/assets/images/icons/pdf_file.png) no-repeat scroll left center;
+
+    line-height:43px;
+
+    padding: 1rem 0 1rem 4rem;
+
+}
+
+.headline h2, .quote h2 {
+    margin-left: 1rem;
+    -webkit-background-clip: text;
+    text-shadow: rgba(0,0,0,0.5) -1px 0, rgba(0,0,0,0.3) 0 -1px, rgba(255,255,255,0.5) 0 1px, rgba(0,0,0,0.3) -1px -2px;
+}
+
+.quote h2 {
+    font-size: 20px;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+#header h1 {
+    color: white;
+    font-size: 20px;
+    font-size: 1.75rem;
+}
+
+#footer {
+    overflow: hidden;;
+    padding-bottom: 34px;
+    background: #1d1e21 url('/assets/images/site-images/footer-bg.jpg') 0 0 no-repeat;
+}
+
+#footer .widget-head h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "Arial Narrow", "Helvetica Neue", Calibri, "Franklin Gothic Medium", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #E3E3E3;
+    text-shadow: 1px 1px 0 black;
+    letter-spacing: -1px;
+    height: 34px;
+    margin: 0;
+    margin-left: 5px;
+    position: relative;
+    border-bottom: #171717 1px solid;
+}
+
+#footer .widget-content {
+border-top: #383838 1px solid;
+padding-top: 16px;
+}
+
+#footer .widget-head img {
+position: absolute;
+bottom: 0;
+right: 17px;
+}
+
+
+
+#footer .widget-content form {
+padding-top: 4px;
+}
+
+#footer .widget-content label {
+color: #D9D9D9;
+width: 82px;
+float: left;
+padding-top: 3px;
+}
+
+#footer .widget-content p {
+    margin-left: 5px;
+}
+
+#footer .widget-content input, #footer .widget-content textarea {
+width: 168px;
+}
+
+#featured-info {
+    background: #212225 url('/assets/images/site-images/content-bg.jpg') 0 0 no-repeat;
+}
+
+/* -----------------------------------------
+   Testimonials
+----------------------------------------- */
+
+#quotes
+{
+    margin:0;
+    position:relative;
+}
+.textItem
+{
+    position:absolute;
+    display:none;
+}
+
+/* -----------------------------------------
+   Main Navigation
+----------------------------------------- */
+
+#main-navigation {
+    z-index: 9999;
+}
+#main-navigation div.menu { position: relative; }
+
+#main-navigation ul {
+    list-style-type: none;
+    height: 60px;
+}
+#main-navigation ul li {
+    float: left;
+    position: relative;
+    overflow: hidden;
+    height: 60px;
+}
+
+#main-navigation ul li:hover, #main-navigation ul li.current_menu_item { overflow: visible; }
+
+#main-navigation ul li a {
+    color: #fff;
+    text-shadow: 1px 1px 0 #250000;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Arial Narrow", "Helvetica Neue", Calibri, "Franklin Gothic Medium", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 57px;
+    display: block;
+    height: 60px;
+    padding: 0 25px 0 24px;
+    margin-left: 1px;
+}
+
+#main-navigation ul li a:hover,
+#main-navigation ul li.current_menu_item a {
+    background-position: 0 -60px;
+    padding-left: 26px;
+    margin-left: -1px;
+}
+
+#main-navigation ul li:first-child a,
+#main-navigation ul li.current_menu_item:first-child a {
+    background-position: -1px -60px !important;
+    padding-left: 25px;
+    margin-left: 0;
+}
+#main-navigation ul li:first-child a { background-position: 100% 0 !important; }
+#main-navigation ul li:first-child a:hover { background-position: 100% -60px !important; }
+#main-navigation ul li:last-child a { background-position: center 0; }
+#main-navigation ul li:last-child a:hover, #main-navigation ul li.current_menu_item:last-child a { background-position: 0 -60px; }
+
+#main-navigation ul ul {
+    background: #7a0000;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: auto !important;
+    height: auto;
+    display: none;
+    float: left;
+}
+#main-navigation ul li:hover ul { display: block; }
+
+#main-navigation ul ul li,
+#main-navigation ul ul li a {
+    display: block;
+    float: none;
+    background: #7a0000;
+    height: 30px !important;
+    line-height: 30px !important;
+    overflow: visible;
+    font-size: 12px;
+    font-weight: normal;
+    color: #fdbbbb;
+    margin: 0;
+    white-space: nowrap;
+}
+#main-navigation ul ul li a { border-top: #690000 1px solid; }
+
+#main-navigation ul ul li a:hover,
+#main-navigation ul ul li:hover,
+#main-navigation ul ul li.current_menu_item,
+#main-navigation ul ul li.current_menu_item a {
+    background: #690000 !important;
+    color: #fff;
+    margin: 0;
+}
+
+#main-navigation ul ul li a:hover,
+#main-navigation ul ul li:first-child a,
+#main-navigation ul ul li.current_menu_item a,
+#main-navigation ul ul li a { padding-left: 24px !important; margin: 0 !important; }
+
+
+
+/* -----------------------------------------
+   Home Page
+----------------------------------------- */
+#featured-info h2, #featured-info p {
+    margin-left: 10px;
+}
+
+#featured-info {
+}
+
+.testimonials .client-say {
+    font-style: italic;
+    color: white;
+}
+
+.client-name {
+    color: #CCC;
+}
+
+.latest-news .news-entry {
+    overflow: hidden;
+    padding-bottom: 17px;
+    font-size: 12px;
+}
+
+.latest-news .date-calendar div {
+    border-top: #E3E3E3 2px solid;
+    background: white;
+    width: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #222;
+    padding: 1px 0;
+    text-align: center;
+}
+
+.latest-news .date-calendar span {
+    width: 30px;
+    height: 13px;
+    display: block;
+    background: #005683;
+    color: white;
+    font-size: 9px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 14px;
+}
+
+.latest-news .date-calendar {
+    float: left;
+    width: 38px;
+    margin-top: 4px;
+}
+
+.latest-news .news-content strong {
+    color: white;
+    position: relative;
+    display: block;
+}
+
+.latest-news .news-content a {
+    color: white;
+    text-decoration: none;
+}
+
+.latest-news .news-content {
+    width: 221px;
+    float: right;
+}
+
+.buynow {
+    background-color: red;
+    border: thin solid white;
+    color: #000000;
+    padding-top: 1rem;
+    -khtml-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+.buynow h2, .buynow p {
+    text-align: center;
+}
+.buynow a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* -----------------------------------------
+   Page Name 2
+----------------------------------------- */
+
+
